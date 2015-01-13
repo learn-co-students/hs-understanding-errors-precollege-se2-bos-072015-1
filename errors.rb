@@ -1,1 +1,3 @@
-errors.rb
+def hello
+  {:pig => "oink"
+end
