@@ -25,4 +25,4 @@ Syntax errors are like the spelling and grammar mistakes of code. Your code may 
 
 #### Semantic Errors
 
-Semantic errors are often tougher to diagnose - instead of small grammatical mistakes, these are mistakes in the logic and/or flow of your programs. Are you trying to use `.upcase` on an array? Are you forgetting to require a file
+Semantic errors are often tougher to diagnose - instead of small grammatical mistakes, these are mistakes in the logic and/or flow of your programs. Are you trying to use `.upcase` on an array? Are you forgetting to require a file? Are you referencing a method or a variable that doesn't exist yet? These are all examples of semantic errors.
