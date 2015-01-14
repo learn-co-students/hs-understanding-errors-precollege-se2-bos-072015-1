@@ -18,8 +18,11 @@ There are two types of errors in Ruby (and most other programming languages): *S
 #### Snytax Errors
 Syntax errors are like the spelling and grammar mistakes of code. Your code may be logically correct, but remember computers are stupid and need the code to be written very specifically - Forgetting to close quotation marks, for example, will cause your code to fail. Here are some more examples:
 
-+ Misspelling method or variable names ('initialize' is spelled I-N-I-T-I-A-L-I-Z-E)
++ Misspellings ('initialize' is spelled I-N-I-T-I-A-L-I-Z-E!)
 + Forgetting an `end`
 + Having one too many `end`s
-+ Forgetting a closing `"`,`)`,`}`, or `[`.
++ Forgetting a closing `"`,`)`,`}`, or `]`.
 
+#### Semantic Errors
+
+Semantic errors are often tougher to diagnose - instead of small grammatical mistakes, these are mistakes in the logic and/or flow of your programs. Are you trying to use `.upcase` on an array? Are you forgetting to require a file

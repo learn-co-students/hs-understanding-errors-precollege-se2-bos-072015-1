@@ -1,3 +1,1 @@
-def hello
-  {:pig => "oink"
-end
+hello + 7
