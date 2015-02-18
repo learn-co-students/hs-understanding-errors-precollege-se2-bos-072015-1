@@ -35,7 +35,27 @@ Semantic errors are often tougher to diagnose - instead of small grammatical mis
 test_file.rb:2: syntax error, unexpected end-of-input, expecting keyword_end
 	"error messages are so great"
 ```
-  + First, you are given a filename, and the line number in the file to look at:
+Let's break this down. First, you are given a filename: `test_file.rb:`, and the line number in the file to look at: `2:`. Next, you're told what kind of error you're dealing with: 'syntax error'. Then you will be given details on the error itself: `unexpected end-of-input`. And finally, a recommendation on how to fix it `expecting keyword_end`. Makes sense, no? Now I know that I should look around line 2 in `test_file.rb` for a missing `end` keyword! 
+
++ Don't always trust the line number and file name, especially if you're dealing with errors that are not syntax-related.
+
++ Don't get an error message, but outcome is incorrect.
+
+-misspelling initialize
+-each instead of map
+-double defning a method
+-calling a method on the return value that is putsed (nil)
+-methods that return true/false
+-case statement or if statement?
+-if statement in the wrong order
+-ternaries
+-scope issues
+-accessing invalid array index
+-order of operations logic errors
+-attr writer vs attr reader
+
+
+
 
 
 
