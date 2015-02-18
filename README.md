@@ -35,10 +35,7 @@ Semantic errors are often tougher to diagnose - instead of small grammatical mis
 test_file.rb:2: syntax error, unexpected end-of-input, expecting keyword_end
 	"error messages are so great"
 ```
-	+ First, you are given the file, and the line number in the file to look at:
-``` 
-test_file.rb:2:
-```
+  + First, you are given a filename, and the line number in the file to look at:
 
 
 
