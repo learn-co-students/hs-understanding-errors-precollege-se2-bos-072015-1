@@ -1,1 +1,2 @@
-hello + 7
+def hello_world
+	"error messages are so great"
