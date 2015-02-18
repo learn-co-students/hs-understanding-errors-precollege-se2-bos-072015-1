@@ -25,7 +25,7 @@ Syntax errors are like the spelling and grammar mistakes of code. Your code may 
 
 #### Semantic Errors
 
-Semantic errors are often tougher to diagnose - instead of small grammatical mistakes, these are mistakes in the logic and/or flow of your programs. Are you trying to use `.upcase` on an array? Are you forgetting to require a file? Are you referencing a method or a variable that doesn't exist yet? Semantic errors come in all shapes and sizes, and often the more code you write the harder they are to find. That's why it is **super important** to write clean, easy to read code. It's much easier to find an error looking though a properly spaced and indented document than it is to weed though jumbled and disorganized text.
+Semantic errors are often tougher to diagnose - instead of small grammatical mistakes, these are mistakes in the logic and/or flow of your programs. You often don't even get an error message, just a program that doesn't work the way you want it to. Are you trying to use `.upcase` on an array? Are you forgetting to require a file? Are you referencing a method or a variable that doesn't exist yet? Semantic errors come in all shapes and sizes, and often the more code you write the harder they are to find. That's why it is **super important** to write clean, easy to read code. It's much easier to find an error looking though a properly spaced and indented document than it is to weed though jumbled and disorganized text.
 
 ### Reading a Ruby Error Message
 
@@ -39,7 +39,15 @@ Let's break this down. First, you are given a filename: `test_file.rb:`, and the
 
 + Don't always trust the line number and file name, especially if you're dealing with errors that are not syntax-related.
 
-+ Don't get an error message, but outcome is incorrect.
+### I Don't get an Error Message, but it's Not Working
+
+These are the much trickier errors to deal with. You don't receive an error message, but something is just not working correctly. You're most likely dealing with a semantic (logic) problem in your code. A few tips to help you through this:
+
++ Walk through your code out loud with another developer. Explain what is happening in your program, line by line.
++ Test your assumptions by using `binding.pry` in tricky parts of code
++ Copy methods to Pry/IRB and try to run it in isolation.
++ Go for a walk/sleep on it. Your brain needs breaks!
++ Every time you make a change, run your code.
 
 -misspelling initialize
 -each instead of map
@@ -53,6 +61,7 @@ Let's break this down. First, you are given a filename: `test_file.rb:`, and the
 -accessing invalid array index
 -order of operations logic errors
 -attr writer vs attr reader
+-undeclared variable
 
 
 
