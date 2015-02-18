@@ -48,8 +48,16 @@ These are the much trickier errors to deal with. You don't receive an error mess
 + Copy methods to Pry/IRB and try to run it in isolation.
 + Go for a walk/sleep on it. Your brain needs breaks!
 + Every time you make a change, run your code.
++ Confirm all variable values.
++ Confirm your return values (Remember, `puts` always returns nil!)
 
--misspelling initialize
+
+2) -missing end
+3) - missing end of array
+4) - puts with no return value
+5) - Missing double quotes
+
+ -misspelling initialize
 -each instead of map
 -double defning a method
 -calling a method on the return value that is putsed (nil)
