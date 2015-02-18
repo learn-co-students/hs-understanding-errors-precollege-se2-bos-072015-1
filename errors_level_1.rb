@@ -11,7 +11,7 @@ def upcase_odd_numbered_words(sentence)
 	updated_sentence_array = sentence.split.collect do |word|
 		if word.length % 2 == 0
 			word
-		else if word.length % 2 == 1
+		elsif word.length % 2 = 1
 			word.upcase
 		end
 	end
