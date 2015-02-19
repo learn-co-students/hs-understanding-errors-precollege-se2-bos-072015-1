@@ -1,7 +1,33 @@
-def doctor_greeting
-	"Hello, what seems to be the problem?"
-end
+class Video
+    attr_reader :url, :title, :tags
 
-def 
+    def initialize(url, title)
+        @url = url
+        @title = title
+        @tags = []
+        @views = 0
+    end
+
+    def views
+        @views
+    end
+
+    def add_to_tags(tag)
+        if !@tags.include?(tag)
+            @tags << tag
+        else
+            puts "that tag already exists"
+        end
+        tags
+    end
+
+    def remove_tag(tag)
+        @tags.delete(tag)
+    end
+
+    def play
+        puts "playing #{title}"
+        @views += 1
+    end
 
 end
