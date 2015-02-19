@@ -1,11 +1,11 @@
 class Video
-    attr_reader :url, :title, :tags
+    attr_reader :url, :tags
 
-    def initialize(url, title)
+    def initalize(url, title)
         @url = url
         @title = title
         @tags = []
-        @views = 0
+        views = 0
     end
 
     def views
@@ -13,12 +13,12 @@ class Video
     end
 
     def add_to_tags(tag)
-        if !@tags.include?(tag)
+        if @tags.include?(tag)
             @tags << tag
         else
             puts "that tag already exists"
         end
-        tags
+        puts tags
     end
 
     def remove_tag(tag)
@@ -29,5 +29,3 @@ class Video
         puts "playing #{title}"
         @views += 1
     end
-
-end
