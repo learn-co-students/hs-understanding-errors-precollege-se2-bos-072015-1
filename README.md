@@ -39,6 +39,8 @@ Let's break this down. First, you are given a filename: `test_file.rb:`, and the
 
 + Don't always trust the line number and file name, especially if you're dealing with errors that are not syntax-related.
 
++ You won't always get all of these pieces (for example: `test.rb:1:in `<main>': undefined local variable or method `hello' for main:Object (NameError)`)
+
 ### I Don't get an Error Message, but it's Not Working
 
 These are the much trickier errors to deal with. You don't receive an error message, but something is just not working correctly. You're most likely dealing with a semantic (logic) problem in your code. A few tips to help you through this:
@@ -51,25 +53,6 @@ These are the much trickier errors to deal with. You don't receive an error mess
 + Confirm all variable values.
 + Confirm your return values (Remember, `puts` always returns nil!)
 
-
-2) -missing end
-3) - missing end of array
-4) - puts with no return value
-5) - Missing double quotes
-
- -misspelling initialize
--each instead of map
--double defning a method
--calling a method on the return value that is putsed (nil)
--methods that return true/false
--case statement or if statement?
--if statement in the wrong order
--ternaries
--scope issues
--accessing invalid array index
--order of operations logic errors
--attr writer vs attr reader
--undeclared variable
 
 
 
