@@ -39,7 +39,7 @@ Let's break this down. First, you are given a filename: `test_file.rb:`, and the
 
 + Don't always trust the line number and file name, especially if you're dealing with errors that are not syntax-related.
 
-+ You won't always get all of these pieces (for example: `test.rb:1:in `<main>': undefined local variable or method `hello' for main:Object (NameError)`)
++ You won't always get all of these pieces (for example: `test.rb:1:in '<main>': undefined local variable or method 'hello' for main:Object (NameError)`)
 
 ### I Don't get an Error Message, but it's Not Working
 
