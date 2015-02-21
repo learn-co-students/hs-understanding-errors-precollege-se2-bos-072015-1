@@ -54,8 +54,11 @@ These are the much trickier errors to deal with. You don't receive an error mess
 + Confirm your return values (Remember, `puts` always returns nil!)
 
 
+### Your Task!
 
+Fork and Clone this repo and then run the tests. They won't pass. In fact, they won't even work. Your job is to debug the code to make the tests pass!
 
+Make sure to submit a pull request when you're done!
 
 
 
